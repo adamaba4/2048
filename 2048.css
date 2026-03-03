@@ -1,8 +1,8 @@
 body{
     background-color: #DDEEEE;
     font-family: Arial, sans-serif;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+
 
 
 
@@ -10,40 +10,42 @@ body{
 h1{
     background-color:#005588;
     color: #DDEEEE;
-    border: #002255;
+    border: 3px solid #002255;
     display: flex;
+    margin: 30px 0 15px;
+    padding: 10px 22px ;
     justify-content: center;
-    align-items: center;
 
 }
 #grille{
 
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-td{
-    border: 1px solid #000;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-}
-table{
-    border-collapse: collapse;
-    width: 300px;
-    height: 300px;
     background-color: #BBDDDD;
+    display: inline-block;
+    margin: 40px 0 15px;
+
+}
+#grille td{
+    border: 2px solid #002255;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+#grille table{
+    border-collapse: collapse;
+    width: 450px;
+    height: 450px;
+}
+
+button{
+    cursor: pointer;
+    padding: 8px 14px;
+    font-size: 16px;
 }
 p{
-    text-align: center;
-}
-button{
-    position: absolute;
-    top: 45%;
-    left: 45%;
-
-
-
+    margin: 12px 0;
+    font-size: 18px;
 }
