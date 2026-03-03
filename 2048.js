@@ -70,7 +70,7 @@ $(document).ready(() => {
     }
 
     function gameOver() {
-
+        $("#score").after(" Game Over")
 
     }
     function changerCoulerCase() {
