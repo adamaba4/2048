@@ -148,7 +148,7 @@ $(document).ready(() => {
     }
     $(document).keydown(function (e){
         if (!enCours) return
-        $("#grille").empty()
+
         if (e.which === 37 )
         {
             glisser =false
@@ -163,6 +163,7 @@ $(document).ready(() => {
                     let c1 = Math.floor(Math.random() * nbVide)
                     caseVide(c1, 2)
                 }
+                $("#grille").empty()
                 construitGrille()
                 afficheScore()
             }
@@ -182,6 +183,7 @@ $(document).ready(() => {
                     let c1 = Math.floor(Math.random() * nbVide)
                     caseVide(c1, 2)
                 }
+                $("#grille").empty()
                 construitGrille()
                 afficheScore()
             }
@@ -201,6 +203,7 @@ $(document).ready(() => {
                     let c1 = Math.floor(Math.random() * nbVide)
                     caseVide(c1, 2)
                 }
+                $("#grille").empty()
                 construitGrille()
                 afficheScore()
             }
@@ -218,6 +221,7 @@ $(document).ready(() => {
                     let c1 = Math.floor(Math.random() * nbVide)
                     caseVide(c1, 2)
                 }
+                $("#grille").empty()
                 construitGrille()
                 afficheScore()
             }
@@ -250,7 +254,8 @@ $(document).ready(() => {
                 return "#FDDFC5"
             case 2048 :
                 return "#6B495A"
-
+            default:
+                return "#BBDDDD"
 
 
 
@@ -260,7 +265,6 @@ $(document).ready(() => {
         nouvelle()
     })
     $("div button").click(nouvelle)
-    $()
 
 })
 
