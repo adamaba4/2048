@@ -11,6 +11,7 @@ h1{
     background-color:#005588;
     color: #DDEEEE;
     border: 3px solid #002255;
+    border-radius: 15px;
     display: flex;
     margin: 30px 0 15px;
     padding: 10px 22px ;
@@ -23,9 +24,10 @@ h1{
     display: inline-block;
     margin: 40px 0 15px;
 
+
 }
 #grille td{
-    border: 2px solid #002255;
+    border: 3px solid #002255;
     width: 70px;
     height: 70px;
     text-align: center;
@@ -33,17 +35,20 @@ h1{
     font-size: 22px;
     font-weight: bold;
 
+
 }
 #grille table{
     border-collapse: collapse;
     width: 450px;
     height: 450px;
+
 }
 
 button{
     cursor: pointer;
     padding: 8px 14px;
     font-size: 16px;
+    border-radius: 15px ;
 }
 p{
     margin: 12px 0;

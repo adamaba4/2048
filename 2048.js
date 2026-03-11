@@ -17,6 +17,9 @@ $(document).ready(() => {
                 const val = grille[i][j]
 
                 const $td = $("<td>").text(val !== 0 ? val : "")
+                 let couleur = color(val)
+                    $($td).css("background-color", couleur)
+
                 $tr.append($td)
             }
             $tbody.append($tr)
@@ -222,6 +225,37 @@ $(document).ready(() => {
         }
 
     })
+    function color(val)
+    {
+        switch (val){
+            case 2:
+                return "#2872A1"
+            case 4:
+                return "#ACC8A2"
+            case 8:
+                return "#204c14"
+            case 16 :
+                return "#5B0E14"
+            case 32 :
+                return "#F1E194"
+            case 64:
+                return "#8e2b4c"
+            case 128:
+                return "#2E1F1B"
+            case 256 :
+                return "#134E5E"
+            case 512 :
+                return "#2C0F12"
+            case 1024 :
+                return "#FDDFC5"
+            case 2048 :
+                return "#6B495A"
+
+
+
+
+        }
+    }
     $(function (){
         nouvelle()
     })
